@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color:khaki;
+        }
+    </style>
+    <title>course1</title>
+</head>
+<body>
+   
+    {% for name in names reversed %} 
+    {{forloop.revcounter}} {{name}}<br>
+    {% endfor %}
+
+
+
+<!--<ul>    
+    {% for name in names reversed %} 
+    <li>{{name}}</li>
+    {% endfor %}
+</ul>-->
+
+
+
+
+
+
+
+
+  <!--  <h2>Example 8.1</h2>
+    {% if nm and st %}
+    <h3>{{st}} seats are available for {{nm}} course</h3>
+    {% endif %}
+
+    <h2>Example 8.2</h2>
+    {% if nm or st %}
+    <h3>{{st}} seats are available for {{nm}} course</h3>
+    {% endif %}
+
+    <h2>Example 8.3</h2>
+    {% if not st %}
+    <h3>seats not available </h3>
+    {% endif %}-->
+</body>
