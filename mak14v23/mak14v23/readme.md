@@ -1,0 +1,1 @@
+topic = Template inside application
