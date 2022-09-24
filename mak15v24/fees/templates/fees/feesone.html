@@ -1,12 +1,23 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% comment %} how to link css in django {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>feesone</title>
 </head>
 <body>
-    <h2>Hello this is: {{fe}}
+    <h2>Hello this is: {{fe}} </h2>
+
+
+    {% comment %} how to render image from static file in django {% endcomment %}
+    <img src="{%static 'images/parrot.jpg'%}" alt="">
+
+
+
 </body>
 </html>

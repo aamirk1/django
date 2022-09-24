@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,9 @@
     <title>coursetwo</title>
 </head>
 <body>
-    <h2>Hello this is: {{ct}}
+    <h2>Hello this is: {{ct}} </h2>
+
+    {% comment %} how to render image from static file in django {% endcomment %}
+    <img src="{% static 'images/images.png' %}" alt="Django">
 </body>
 </html>

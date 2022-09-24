@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,8 @@
     <title>courseone</title>
 </head>
 <body>
-    <h2>Hello this is: {{co}}
+    <h2>Hello this is: {{co}} </h2>
+    <img src="{% static 'images/parrot.jpg' %}" alt="django">
+
 </body>
 </html>
