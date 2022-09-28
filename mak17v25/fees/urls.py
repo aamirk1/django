@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('feeso/',views.fees_py),
-    path('feest/',views.fees_ja),
+    path('feespy/',views.fees_py),
+    path('feesja/',views.fees_ja),
 ]
