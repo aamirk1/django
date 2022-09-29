@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+    <title>{% block title %}Mak{% endblock title %}</title>
 </head>
 <body>
-    <h2>This is {{ab}} Page</h2>
+    <h2>This is {{hm}} Page</h2>
     <ul>
         <li>Home</li>
-        <li></li>
-        <li></li>
+        <li>About</li>
+        <li>Contact</li>
     </ul>
+
+    {% block h1 %}Mak Page{% endblock h1 %}
 </body>
 </html>
