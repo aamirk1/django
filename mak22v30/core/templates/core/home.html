@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+
+<h2>This is {{hm}} Page</h2>
+    <div class="container">
+        <div class="row">
+            <div class="cus">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">About</a></li>
+                    <li><a href="{% url 'contactus' %}">Contact</a></li>
+                </ul>
+                <div class="btn btn-primary">primary</div>
+                <div class="btn btn-secondary">secondary</div>
+
+            </div>
+
+        </div>
+    </div>
+
+<a class="btn btn-warning" href="{% url 'top' %}">Course</a>
+<div class="container mt-5 bg-success">
+    {% include 'core/cour.html' %}
+    {% include 'core/cour.html' %}
+</div>
+
+{% include 'core/cour.html' %}
+{% include 'core/cour.html' %}
+{% endblock content %}
