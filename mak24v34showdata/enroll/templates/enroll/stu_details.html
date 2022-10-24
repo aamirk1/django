@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th,td{
+            border:1px black solid;
+            margin:2px;
+            padding:1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>student page</h1>
+    {% if st %}
+    <h3>show data</h3>
+    
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Stu ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+        {% for stu in st %}
+        <tr>
+            <td>{{stu.id}}</td>
+            <td>{{stu.stuid}}</td>
+            <td>{{stu.stuname}}</td>
+            <td>{{stu.stuemail}}</td>
+            <td>{{stu.stupass}}</td>
+            
+        </tr>
+
+        {% endfor %}
+    </table>
+
+
+    <h1>this method used to retrieve any one specific data</h1>
+    
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Stu ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+        <tr>
+            <td>{{stus.id}}</td>
+            <td>{{stus.stuid}}</td>
+            <td>{{stus.stuname}}</td>
+            <td>{{stus.stuemail}}</td>
+            <td>{{stus.stupass}}</td>
+            
+        </tr>
+    </table>
+  
+
+    {% else %}
+    <h2>no data</h2>
+
+    {% endif %}
+</body>
+</html>
