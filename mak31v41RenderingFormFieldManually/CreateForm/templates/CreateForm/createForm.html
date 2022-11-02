@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>mak31v41 Rendering Form Field Manually
+    </h2>
+    
+    <form action="" method="get">
+        {% comment %} this is hard code {% endcomment %}
+        <div>
+            <label for="id_name">Name:</label>
+            <input type="text" name='name' required id='id_name'>
+        </div>
+        
+        {% comment %} this dynamic code {% endcomment %}
+        <div>
+            <label for="{{frm.name.id_for_label}}">Name:</label>
+            {{frm.name}}
+        </div>
+    </form>
+   
+
+</body>
+</html> 
